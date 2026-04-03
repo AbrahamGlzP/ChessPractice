@@ -30,9 +30,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		BEF24BDA2F80489100665A11 /* ChessPractice */ = {
+		BEF24BDA2F80489100665A11 /* App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ChessPractice;
+			path = App;
 			sourceTree = "<group>";
 		};
 		BEF24BE82F80489200665A11 /* ChessPracticeTests */ = {
@@ -43,6 +43,26 @@
 		BEF24BF22F80489200665A11 /* ChessPracticeUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ChessPracticeUITests;
+			sourceTree = "<group>";
+		};
+		BEF24C022F8048EB00665A11 /* Networking */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BEF24C062F80492100665A11 /* Domain */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		BEF24C072F80492700665A11 /* ViewModel */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BEF24C082F80492E00665A11 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,7 +95,11 @@
 		BEF24BCF2F80489100665A11 = {
 			isa = PBXGroup;
 			children = (
-				BEF24BDA2F80489100665A11 /* ChessPractice */,
+				BEF24C082F80492E00665A11 /* Views */,
+				BEF24C072F80492700665A11 /* ViewModel */,
+				BEF24C062F80492100665A11 /* Domain */,
+				BEF24C022F8048EB00665A11 /* Networking */,
+				BEF24BDA2F80489100665A11 /* App */,
 				BEF24BE82F80489200665A11 /* ChessPracticeTests */,
 				BEF24BF22F80489200665A11 /* ChessPracticeUITests */,
 				BEF24BD92F80489100665A11 /* Products */,
@@ -108,7 +132,11 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				BEF24BDA2F80489100665A11 /* ChessPractice */,
+				BEF24BDA2F80489100665A11 /* App */,
+				BEF24C022F8048EB00665A11 /* Networking */,
+				BEF24C062F80492100665A11 /* Domain */,
+				BEF24C072F80492700665A11 /* ViewModel */,
+				BEF24C082F80492E00665A11 /* Views */,
 			);
 			name = ChessPractice;
 			packageProductDependencies = (
@@ -405,6 +433,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,6 +466,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
