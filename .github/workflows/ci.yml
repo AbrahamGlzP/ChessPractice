@@ -26,6 +26,9 @@ jobs:
 
       - name: Selecciona Xcode
         run: sudo xcode-select -s /Applications/Xcode.app
+      
+      - name: Lista simuladores disponbibles
+        run: xcrun simctl list devices available 
 
       - name: Corre tests
         run: fastlane test

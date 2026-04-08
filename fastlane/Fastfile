@@ -22,7 +22,7 @@ platform :ios do
     run_tests(
       project: "ChessPractice.xcodeproj",
       scheme: "ChessPractice",
-      devices: ["iPhone 16"],
+      deployment_target_version: "17.0",
       code_coverage: true,
       output_directory: "fastlane/test_output",
       output_files: "report.junit"
