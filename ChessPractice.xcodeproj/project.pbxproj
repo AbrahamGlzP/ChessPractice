@@ -34,11 +34,6 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		BEF24C022F8048EB00665A11 /* Networking */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Networking;
-			sourceTree = "<group>";
-		};
 		BEF24C062F80492100665A11 /* Domain */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Domain;
@@ -89,7 +84,6 @@
 				BEF24C082F80492E00665A11 /* Views */,
 				BEF24C072F80492700665A11 /* ViewModel */,
 				BEF24C062F80492100665A11 /* Domain */,
-				BEF24C022F8048EB00665A11 /* Networking */,
 				BEF24BDA2F80489100665A11 /* App */,
 				BEF24C482F846E3B00665A11 /* ChessPracticeTests */,
 				BEF24C512F854ECE00665A11 /* Frameworks */,
@@ -130,7 +124,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				BEF24BDA2F80489100665A11 /* App */,
-				BEF24C022F8048EB00665A11 /* Networking */,
 				BEF24C062F80492100665A11 /* Domain */,
 				BEF24C072F80492700665A11 /* ViewModel */,
 				BEF24C082F80492E00665A11 /* Views */,

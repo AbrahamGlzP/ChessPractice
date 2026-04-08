@@ -1,0 +1,49 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+
+  desc "Corre todos los tests del proyecto"
+  lane :test do
+    run_tests(
+      project: "ChessPractice.xcodeproj",
+      scheme: "ChessPractice",
+      devices: ["iPhone 16"],
+      code_coverage: true,
+      output_directory: "fastlane/test_output",
+      output_files: "report.junit"
+    )
+  end
+
+  desc "Compila el proyecto sin correr tests"
+  lane :build do
+    build_app(
+      project: "ChessPractice.xcodeproj",
+      scheme: "ChessPractice",
+      skip_package_ipa: true,
+      skip_codesigning: true,
+      destination: "generic/platform=iOS Simulator"
+    )
+  end
+
+  desc "CI: compila y corre tests"
+  lane :ci do
+    build
+    test
+  end
+
+end
