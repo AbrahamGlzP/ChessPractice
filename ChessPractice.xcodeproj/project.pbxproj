@@ -6,15 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BEF24C532F854ECE00665A11 /* ChessNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = BEF24C522F854ECE00665A11 /* ChessNetworking */; };
+		BEF24C562F85581400665A11 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = BEF24C552F85581400665A11 /* Collections */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
-		BEF24BE62F80489200665A11 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BEF24BD02F80489100665A11 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BEF24BD72F80489100665A11;
-			remoteInfo = ChessPractice;
-		};
-		BEF24BF02F80489200665A11 /* PBXContainerItemProxy */ = {
+		BEF24C4B2F846E3B00665A11 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BEF24BD02F80489100665A11 /* Project object */;
 			proxyType = 1;
@@ -25,24 +23,15 @@
 
 /* Begin PBXFileReference section */
 		BEF24BD82F80489100665A11 /* ChessPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEF24BE52F80489200665A11 /* ChessPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEF24BEF2F80489200665A11 /* ChessPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF24C1B2F84244D00665A11 /* ChessPractice-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChessPractice-Info.plist"; sourceTree = "<group>"; };
+		BEF24C472F846E3B00665A11 /* ChessPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF24C502F854C5700665A11 /* ChessNetworking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ChessNetworking; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BEF24BDA2F80489100665A11 /* App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = App;
-			sourceTree = "<group>";
-		};
-		BEF24BE82F80489200665A11 /* ChessPracticeTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ChessPracticeTests;
-			sourceTree = "<group>";
-		};
-		BEF24BF22F80489200665A11 /* ChessPracticeUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ChessPracticeUITests;
 			sourceTree = "<group>";
 		};
 		BEF24C022F8048EB00665A11 /* Networking */ = {
@@ -65,6 +54,11 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		BEF24C482F846E3B00665A11 /* ChessPracticeTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ChessPracticeTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,17 +66,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEF24C562F85581400665A11 /* Collections in Frameworks */,
+				BEF24C532F854ECE00665A11 /* ChessNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BEF24BE22F80489200665A11 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BEF24BEC2F80489200665A11 /* Frameworks */ = {
+		BEF24C442F846E3B00665A11 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -95,13 +84,15 @@
 		BEF24BCF2F80489100665A11 = {
 			isa = PBXGroup;
 			children = (
+				BEF24C502F854C5700665A11 /* ChessNetworking */,
+				BEF24C1B2F84244D00665A11 /* ChessPractice-Info.plist */,
 				BEF24C082F80492E00665A11 /* Views */,
 				BEF24C072F80492700665A11 /* ViewModel */,
 				BEF24C062F80492100665A11 /* Domain */,
 				BEF24C022F8048EB00665A11 /* Networking */,
 				BEF24BDA2F80489100665A11 /* App */,
-				BEF24BE82F80489200665A11 /* ChessPracticeTests */,
-				BEF24BF22F80489200665A11 /* ChessPracticeUITests */,
+				BEF24C482F846E3B00665A11 /* ChessPracticeTests */,
+				BEF24C512F854ECE00665A11 /* Frameworks */,
 				BEF24BD92F80489100665A11 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,10 +101,16 @@
 			isa = PBXGroup;
 			children = (
 				BEF24BD82F80489100665A11 /* ChessPractice.app */,
-				BEF24BE52F80489200665A11 /* ChessPracticeTests.xctest */,
-				BEF24BEF2F80489200665A11 /* ChessPracticeUITests.xctest */,
+				BEF24C472F846E3B00665A11 /* ChessPracticeTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BEF24C512F854ECE00665A11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,56 +137,35 @@
 			);
 			name = ChessPractice;
 			packageProductDependencies = (
+				BEF24C522F854ECE00665A11 /* ChessNetworking */,
+				BEF24C552F85581400665A11 /* Collections */,
 			);
 			productName = ChessPractice;
 			productReference = BEF24BD82F80489100665A11 /* ChessPractice.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BEF24BE42F80489200665A11 /* ChessPracticeTests */ = {
+		BEF24C462F846E3B00665A11 /* ChessPracticeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BEF24BFC2F80489200665A11 /* Build configuration list for PBXNativeTarget "ChessPracticeTests" */;
+			buildConfigurationList = BEF24C4D2F846E3B00665A11 /* Build configuration list for PBXNativeTarget "ChessPracticeTests" */;
 			buildPhases = (
-				BEF24BE12F80489200665A11 /* Sources */,
-				BEF24BE22F80489200665A11 /* Frameworks */,
-				BEF24BE32F80489200665A11 /* Resources */,
+				BEF24C432F846E3B00665A11 /* Sources */,
+				BEF24C442F846E3B00665A11 /* Frameworks */,
+				BEF24C452F846E3B00665A11 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BEF24BE72F80489200665A11 /* PBXTargetDependency */,
+				BEF24C4C2F846E3B00665A11 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				BEF24BE82F80489200665A11 /* ChessPracticeTests */,
+				BEF24C482F846E3B00665A11 /* ChessPracticeTests */,
 			);
 			name = ChessPracticeTests;
 			packageProductDependencies = (
 			);
 			productName = ChessPracticeTests;
-			productReference = BEF24BE52F80489200665A11 /* ChessPracticeTests.xctest */;
+			productReference = BEF24C472F846E3B00665A11 /* ChessPracticeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		BEF24BEE2F80489200665A11 /* ChessPracticeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BEF24BFF2F80489200665A11 /* Build configuration list for PBXNativeTarget "ChessPracticeUITests" */;
-			buildPhases = (
-				BEF24BEB2F80489200665A11 /* Sources */,
-				BEF24BEC2F80489200665A11 /* Frameworks */,
-				BEF24BED2F80489200665A11 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BEF24BF12F80489200665A11 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				BEF24BF22F80489200665A11 /* ChessPracticeUITests */,
-			);
-			name = ChessPracticeUITests;
-			packageProductDependencies = (
-			);
-			productName = ChessPracticeUITests;
-			productReference = BEF24BEF2F80489200665A11 /* ChessPracticeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -204,11 +180,7 @@
 					BEF24BD72F80489100665A11 = {
 						CreatedOnToolsVersion = 26.2;
 					};
-					BEF24BE42F80489200665A11 = {
-						CreatedOnToolsVersion = 26.2;
-						TestTargetID = BEF24BD72F80489100665A11;
-					};
-					BEF24BEE2F80489200665A11 = {
+					BEF24C462F846E3B00665A11 = {
 						CreatedOnToolsVersion = 26.2;
 						TestTargetID = BEF24BD72F80489100665A11;
 					};
@@ -220,17 +192,20 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
 			);
 			mainGroup = BEF24BCF2F80489100665A11;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BEF24C542F85581400665A11 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BEF24BD92F80489100665A11 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				BEF24BD72F80489100665A11 /* ChessPractice */,
-				BEF24BE42F80489200665A11 /* ChessPracticeTests */,
-				BEF24BEE2F80489200665A11 /* ChessPracticeUITests */,
+				BEF24C462F846E3B00665A11 /* ChessPracticeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,14 +218,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BEF24BE32F80489200665A11 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BEF24BED2F80489200665A11 /* Resources */ = {
+		BEF24C452F846E3B00665A11 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -267,14 +235,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BEF24BE12F80489200665A11 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BEF24BEB2F80489200665A11 /* Sources */ = {
+		BEF24C432F846E3B00665A11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,15 +245,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BEF24BE72F80489200665A11 /* PBXTargetDependency */ = {
+		BEF24C4C2F846E3B00665A11 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BEF24BD72F80489100665A11 /* ChessPractice */;
-			targetProxy = BEF24BE62F80489200665A11 /* PBXContainerItemProxy */;
-		};
-		BEF24BF12F80489200665A11 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BEF24BD72F80489100665A11 /* ChessPractice */;
-			targetProxy = BEF24BF02F80489200665A11 /* PBXContainerItemProxy */;
+			targetProxy = BEF24C4B2F846E3B00665A11 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -357,6 +313,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -414,6 +371,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -428,6 +386,7 @@
 				DEVELOPMENT_TEAM = ZZFSMQF9XK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ChessPractice-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -461,6 +420,7 @@
 				DEVELOPMENT_TEAM = ZZFSMQF9XK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ChessPractice-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -484,7 +444,7 @@
 			};
 			name = Release;
 		};
-		BEF24BFD2F80489200665A11 /* Debug */ = {
+		BEF24C4E2F846E3B00665A11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -492,7 +452,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZZFSMQF9XK;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abrahamgonzalez.ChessPracticeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -506,7 +465,7 @@
 			};
 			name = Debug;
 		};
-		BEF24BFE2F80489200665A11 /* Release */ = {
+		BEF24C4F2F846E3B00665A11 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,7 +473,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZZFSMQF9XK;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abrahamgonzalez.ChessPracticeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -525,46 +483,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChessPractice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChessPractice";
-			};
-			name = Release;
-		};
-		BEF24C002F80489200665A11 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZZFSMQF9XK;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.abrahamgonzalez.ChessPracticeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ChessPractice;
-			};
-			name = Debug;
-		};
-		BEF24C012F80489200665A11 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZZFSMQF9XK;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.abrahamgonzalez.ChessPracticeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ChessPractice;
 			};
 			name = Release;
 		};
@@ -589,25 +507,39 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BEF24BFC2F80489200665A11 /* Build configuration list for PBXNativeTarget "ChessPracticeTests" */ = {
+		BEF24C4D2F846E3B00665A11 /* Build configuration list for PBXNativeTarget "ChessPracticeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEF24BFD2F80489200665A11 /* Debug */,
-				BEF24BFE2F80489200665A11 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BEF24BFF2F80489200665A11 /* Build configuration list for PBXNativeTarget "ChessPracticeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BEF24C002F80489200665A11 /* Debug */,
-				BEF24C012F80489200665A11 /* Release */,
+				BEF24C4E2F846E3B00665A11 /* Debug */,
+				BEF24C4F2F846E3B00665A11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BEF24C542F85581400665A11 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BEF24C522F854ECE00665A11 /* ChessNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ChessNetworking;
+		};
+		BEF24C552F85581400665A11 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEF24C542F85581400665A11 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BEF24BD02F80489100665A11 /* Project object */;
 }
