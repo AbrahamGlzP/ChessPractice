@@ -54,7 +54,7 @@ extension ChessMove {
     }
 }
 
-// MARK: Accessibility
+// MARK: Accessibility a11y
 extension ChessMove {
     var accessibilityDescription: String {
         let piece = accessibilityPieceName
